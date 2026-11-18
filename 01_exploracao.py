@@ -1,8 +1,6 @@
 import pandas as pd
 from pathlib import Path
 
-# Caminho do CSV dentro do próprio projeto, relativo a este arquivo.
-# Assim o script funciona em qualquer máquina que clonar o repositório.
 pasta_projeto = Path(__file__).resolve().parent
 caminho = pasta_projeto / "dados" / "sao-paulo-properties-april-2019.csv"
 
