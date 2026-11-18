@@ -1,4 +1,50 @@
 {
+  "modelo_principal": "m2",
+  "modelos": {
+    "m2": {
+      "nome": "Preço por m²",
+      "arquivo": "modelo_arvore_m2.joblib",
+      "alvo": "m2",
+      "faixa_pct": 0.2743,
+      "erro_mediano_pct": 0.1366,
+      "mae": 108458,
+      "rmse": 199452,
+      "r2": 0.87,
+      "mae_10_sorteios": 112390,
+      "r2_10_sorteios": 0.84,
+      "parametros": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "importancias": {
+        "Área": 0.37,
+        "Quartos": 0.105,
+        "Bairro": 0.526
+      }
+    },
+    "preco": {
+      "nome": "Preço total",
+      "arquivo": "modelo_arvore_preco.joblib",
+      "alvo": "preco",
+      "faixa_pct": 0.2958,
+      "erro_mediano_pct": 0.1277,
+      "mae": 129418,
+      "rmse": 297131,
+      "r2": 0.712,
+      "mae_10_sorteios": 125844,
+      "r2_10_sorteios": 0.776,
+      "parametros": {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      },
+      "importancias": {
+        "Área": 0.823,
+        "Quartos": 0.02,
+        "Bairro": 0.157
+      }
+    }
+  },
+  "vitorias_m2_10_sorteios": 10,
   "bairros": [
     "Alto de Pinheiros",
     "Anhanguera",
@@ -103,15 +149,492 @@
   "quartos_max": 5,
   "preco_m2_min": 2500,
   "preco_m2_max": 17889,
-  "faixa_pct": 0.2958,
-  "erro_mediano_pct": 0.1277,
-  "mae": 129418,
-  "rmse": 297131,
-  "r2": 0.712,
-  "parametros": {
-    "max_depth": null,
-    "min_samples_leaf": 1
-  },
   "linhas_treino": 4951,
-  "linhas_teste": 1224
+  "linhas_teste": 1224,
+  "area_por_bairro": {
+    "Alto de Pinheiros": [
+      49,
+      620,
+      68
+    ],
+    "Anhanguera": [
+      50,
+      266,
+      30
+    ],
+    "Aricanduva": [
+      36,
+      145,
+      64
+    ],
+    "Artur Alvim": [
+      32,
+      60,
+      61
+    ],
+    "Barra Funda": [
+      31,
+      162,
+      86
+    ],
+    "Bela Vista": [
+      30,
+      390,
+      100
+    ],
+    "Belém": [
+      32,
+      247,
+      92
+    ],
+    "Bom Retiro": [
+      30,
+      235,
+      121
+    ],
+    "Brasilândia": [
+      40,
+      58,
+      27
+    ],
+    "Brooklin": [
+      34,
+      315,
+      104
+    ],
+    "Brás": [
+      30,
+      196,
+      101
+    ],
+    "Butantã": [
+      40,
+      154,
+      25
+    ],
+    "Cachoeirinha": [
+      35,
+      70,
+      26
+    ],
+    "Cambuci": [
+      34,
+      144,
+      75
+    ],
+    "Campo Belo": [
+      33,
+      310,
+      43
+    ],
+    "Campo Grande": [
+      30,
+      274,
+      53
+    ],
+    "Campo Limpo": [
+      34,
+      122,
+      50
+    ],
+    "Cangaíba": [
+      30,
+      125,
+      63
+    ],
+    "Capão Redondo": [
+      35,
+      180,
+      37
+    ],
+    "Carrão": [
+      45,
+      160,
+      62
+    ],
+    "Casa Verde": [
+      42,
+      505,
+      120
+    ],
+    "Cidade Ademar": [
+      31,
+      146,
+      60
+    ],
+    "Cidade Dutra": [
+      49,
+      185,
+      41
+    ],
+    "Cidade Líder": [
+      35,
+      98,
+      61
+    ],
+    "Cidade Tiradentes": [
+      35,
+      54,
+      24
+    ],
+    "Consolação": [
+      32,
+      310,
+      79
+    ],
+    "Cursino": [
+      41,
+      360,
+      50
+    ],
+    "Ermelino Matarazzo": [
+      40,
+      76,
+      63
+    ],
+    "Freguesia do Ó": [
+      41,
+      112,
+      23
+    ],
+    "Grajaú": [
+      39,
+      73,
+      28
+    ],
+    "Guaianazes": [
+      33,
+      146,
+      51
+    ],
+    "Iguatemi": [
+      78,
+      131,
+      9
+    ],
+    "Ipiranga": [
+      34,
+      160,
+      51
+    ],
+    "Itaim Bibi": [
+      45,
+      540,
+      48
+    ],
+    "Itaim Paulista": [
+      41,
+      90,
+      34
+    ],
+    "Itaquera": [
+      36,
+      70,
+      61
+    ],
+    "Jabaquara": [
+      39,
+      128,
+      56
+    ],
+    "Jaguaré": [
+      50,
+      234,
+      29
+    ],
+    "Jaraguá": [
+      57,
+      69,
+      17
+    ],
+    "Jardim Helena": [
+      32,
+      90,
+      26
+    ],
+    "Jardim Paulista": [
+      31,
+      348,
+      60
+    ],
+    "Jardim São Luis": [
+      45,
+      162,
+      33
+    ],
+    "Jardim Ângela": [
+      43,
+      65,
+      29
+    ],
+    "Jaçanã": [
+      34,
+      248,
+      80
+    ],
+    "José Bonifácio": [
+      35,
+      152,
+      31
+    ],
+    "Lajeado": [
+      37,
+      70,
+      24
+    ],
+    "Lapa": [
+      48,
+      138,
+      28
+    ],
+    "Liberdade": [
+      31,
+      200,
+      95
+    ],
+    "Limão": [
+      45,
+      100,
+      30
+    ],
+    "Mandaqui": [
+      40,
+      260,
+      94
+    ],
+    "Medeiros": [
+      47,
+      118,
+      41
+    ],
+    "Moema": [
+      32,
+      316,
+      98
+    ],
+    "Mooca": [
+      35,
+      221,
+      83
+    ],
+    "Morumbi": [
+      48,
+      238,
+      30
+    ],
+    "Pari": [
+      42,
+      192,
+      45
+    ],
+    "Parque do Carmo": [
+      40,
+      73,
+      58
+    ],
+    "Pedreira": [
+      44,
+      74,
+      24
+    ],
+    "Penha": [
+      32,
+      280,
+      53
+    ],
+    "Perdizes": [
+      40,
+      295,
+      80
+    ],
+    "Perus": [
+      37,
+      51,
+      17
+    ],
+    "Pinheiros": [
+      30,
+      250,
+      74
+    ],
+    "Pirituba": [
+      40,
+      131,
+      30
+    ],
+    "Ponte Rasa": [
+      30,
+      74,
+      52
+    ],
+    "Raposo Tavares": [
+      41,
+      190,
+      29
+    ],
+    "República": [
+      30,
+      395,
+      83
+    ],
+    "Rio Pequeno": [
+      52,
+      236,
+      26
+    ],
+    "Sacomã": [
+      32,
+      100,
+      32
+    ],
+    "Santa Cecília": [
+      30,
+      339,
+      87
+    ],
+    "Santana": [
+      42,
+      330,
+      50
+    ],
+    "Santo Amaro": [
+      35,
+      250,
+      49
+    ],
+    "Sapopemba": [
+      42,
+      146,
+      49
+    ],
+    "Saúde": [
+      41,
+      111,
+      27
+    ],
+    "Socorro": [
+      47,
+      110,
+      24
+    ],
+    "São Domingos": [
+      43,
+      87,
+      28
+    ],
+    "São Lucas": [
+      43,
+      81,
+      63
+    ],
+    "São Mateus": [
+      37,
+      76,
+      71
+    ],
+    "São Miguel": [
+      40,
+      220,
+      28
+    ],
+    "São Rafael": [
+      49,
+      94,
+      29
+    ],
+    "Sé": [
+      30,
+      156,
+      73
+    ],
+    "Tatuapé": [
+      38,
+      300,
+      55
+    ],
+    "Tremembé": [
+      47,
+      172,
+      42
+    ],
+    "Tucuruvi": [
+      41,
+      156,
+      46
+    ],
+    "Vila Andrade": [
+      38,
+      280,
+      33
+    ],
+    "Vila Curuçá": [
+      40,
+      90,
+      67
+    ],
+    "Vila Formosa": [
+      46,
+      187,
+      72
+    ],
+    "Vila Guilherme": [
+      43,
+      140,
+      55
+    ],
+    "Vila Jacuí": [
+      42,
+      300,
+      37
+    ],
+    "Vila Leopoldina": [
+      40,
+      142,
+      27
+    ],
+    "Vila Madalena": [
+      63,
+      275,
+      32
+    ],
+    "Vila Maria": [
+      39,
+      100,
+      65
+    ],
+    "Vila Mariana": [
+      32,
+      294,
+      35
+    ],
+    "Vila Matilde": [
+      35,
+      145,
+      38
+    ],
+    "Vila Olimpia": [
+      33,
+      210,
+      32
+    ],
+    "Vila Prudente": [
+      30,
+      185,
+      76
+    ],
+    "Vila Sônia": [
+      37,
+      190,
+      25
+    ],
+    "Água Rasa": [
+      47,
+      315,
+      58
+    ]
+  },
+  "linhas_dataset": 13640,
+  "vendas_dataset": 6412,
+  "duplicatas_removidas": 110,
+  "linhas_limpas": 6175
 }
