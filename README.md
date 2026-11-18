@@ -2,7 +2,7 @@
 
 Site que estima o preço de venda de um imóvel em São Paulo a partir da **área**, do número de **quartos** e do **bairro**, usando uma **Árvore de Regressão**. Trabalho de Mineração de Dados.
 
-- **Site (link público):** _a preencher depois da publicação_
+- **Site (link público):** https://previsao-preco-imoveis-tcnjprszjesrrjoa8quthy.streamlit.app/
 - **Integrantes:** Matheus Silva do Monte e Gustavo Azevedo Diniz
 - **Professora:** Bruna Silva Celestino
 
@@ -12,7 +12,7 @@ O usuário informa área, quartos e bairro e recebe o **preço estimado** e uma 
 
 ## Dados
 
-- **Fonte:** Kaggle, *São Paulo Real Estate - Sale / Rent - April 2019* (arquivo `sao-paulo-properties-april-2019.csv`). Dados **reais** de anúncios de abril de 2019, **não simulados**. Confira a licença na página do dataset antes de redistribuir.
+- **Fonte:** Kaggle, [*São Paulo Real Estate - Sale / Rent - April 2019*](https://www.kaggle.com/datasets/argonalyst/sao-paulo-real-estate-sale-rent-april-2019) (arquivo `sao-paulo-properties-april-2019.csv`). Dados **reais** de anúncios de abril de 2019, **não simulados**. Confira a licença na página do dataset antes de redistribuir.
 - 13.640 anúncios (venda e aluguel). O projeto usa só os 6.412 de **venda**.
 - Arquivo no repositório: `dados/sao-paulo-properties-april-2019.csv`.
 
