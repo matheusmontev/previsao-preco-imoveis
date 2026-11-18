@@ -1,7 +1,8 @@
 """Preparação dos dados: carregar, limpar e dividir em treino e teste.
 
-Este arquivo é usado pelo treino e pelo site, para que os dois
-preparem os dados exatamente do mesmo jeito.
+Este arquivo é usado pelo notebook de treino. O site não o importa: ele recebe
+a lista de bairros já limpa e os limites de área e quartos pelo modelo/metadados.json,
+que o notebook gera a partir destes dados.
 """
 from pathlib import Path
 
@@ -109,7 +110,7 @@ def dividir_treino_teste(dados, tamanho_teste=0.2, semente=42):
 
 if __name__ == "__main__":
     # Roda só quando o arquivo é executado direto (python preparacao.py),
-    # não quando é importado pelo treino ou pelo site.
+    # não quando é importado pelo notebook de treino.
     df = carregar_dados()
     vendas = df[df["Negotiation Type"] == "sale"]
     dados = preparar_dados(df)
